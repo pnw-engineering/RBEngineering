@@ -1,0 +1,104 @@
+.tool-details {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 0;
+  flex-direction: column;
+}
+
+.tool-details .title {
+  margin: 0 auto;
+  font-size: 1.5rem;
+  color: var(--clr-highlight);
+}
+
+.tool-table {
+  flex-wrap: wrap;
+  display: grid;
+  margin: 0 auto;
+  grid-template:
+    "Name   Name Name  Name" 2.5rem
+    "h-Cond h-H0 h-HA  Link"
+    "Cond   H0   HA    Link"
+    /4fr min(20%, 5em) min(20%, 5em) 10%;
+}
+
+.tool-table div:not(.tool-name) {
+  border: 1px solid var(--clr-text-normal);
+}
+
+.tool-name {
+  grid-area: Name;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-align: center;
+  color: var(--clr-highlight-100);
+  border: none;
+  background-image: var(--gradientv);
+  /* background-image: linear-gradient(
+    0deg,
+    hsl(212deg 45% 13%) 0%,
+    hsl(207, 44%, 29%) 50%,
+    hsl(202deg 43% 46%) 100%
+  ); */
+  /* background-color: var(--clr-primary-400); */
+}
+
+.tool-head1 {
+  grid-area: h-Cond;
+  padding-left: 5px;
+}
+
+.tool-head2 {
+  grid-area: h-H0;
+  text-align: center;
+}
+
+.tool-head3 {
+  grid-area: h-HA;
+  text-align: center;
+}
+
+.tool-cond {
+  grid-area: Cond;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.tool-H0 {
+  grid-area: H0;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.tool-HA {
+  grid-area: HA;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.tool-link {
+  grid-area: Link;
+  display: grid;
+  align-items: center;
+  padding-left: 5px;
+}
+
+.tool-link ~ img {
+  margin: 0 auto;
+  max-width: 20%;
+  background-color: transparent;
+  border: 1px solid red;
+}
+
+.tool-link:hover {
+  background-color: var(--clr-secondary);
+}
+
+.W-Ref {
+  color: green;
+  align-self: right;
+  font-weight: 700;
+  font-family: "Brush Script MT", cursive;
+  font-style: oblique;
+}

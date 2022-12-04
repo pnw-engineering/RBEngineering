@@ -1,0 +1,137 @@
+body {
+  overflow-y: hidden;
+  position: relative;
+}
+
+.sectionWrapper {
+  /* display: flex; */
+  /* flex-direction: column; */
+  position: relative;
+  margin-top: 2em;
+  height: max(5em, 25vh);
+}
+
+.topBox {
+  position: absolute;
+  top: -2em;
+  left: 2em;
+  margin-left: 1em;
+  margin-top: 3em;
+  padding-block: 1em;
+  width: min(60rem, 80vw);
+  text-align: center;
+  font-size: 2rem;
+  /* color: var(--clr-text-light); */
+  color: var(--clr-primary-100);
+  background: var(--clr-secondary-200);
+  opacity: 90%;
+  border: 5px ridge var(--clr-accent-400);
+  border-radius: 10px;
+  transform: rotate(10deg);
+  /* transform: translatex(20px); */
+  filter: drop-shadow(0 0 20px var(--clr-accent-300));
+}
+
+.logoImg {
+  width: 20vw;
+  /* max-height: 100%; */
+  position: absolute;
+  top: 1rem;
+  right: 40rem;
+  transform: rotate(30deg) translatex(-50%);
+  opacity: 50%;
+  background: var(--clr-highlight-200);
+}
+
+.noScroll {
+  overflow-y: hidden;
+}
+
+.textGrid {
+  /* position: relative; */
+  /* top: 40%; */
+  left: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+.textBox {
+  position: absolute;
+  top: 30rem;
+  left: 12rem;
+  font-size: 2em;
+  margin-left: 2rem;
+  color: var(--clr-text-light);
+}
+
+.logo {
+  position: absolute;
+  top: 30rem;
+  left: 25rem;
+  z-index: 1;
+  font-family: "faster one";
+  font-size: 4em;
+  width: min(10em, 80vw);
+  line-height: 1;
+  border: 8px double hsl(0, 100%, 30%);
+  border-radius: 10px;
+  color: var(--clr-accent-500);
+  /* color: hsl(0, 100%, 29%); */
+  transform: rotate(-15deg);
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  text-align: center;
+  background: var(--clr-text-light);
+  filter: drop-shadow(0 0 20px var(--clr-text-light));
+}
+
+.bottomImg {
+  width: min(25em, 50vw);
+  position: absolute;
+  bottom: 3em;
+  right: 5em;
+  transform: rotate(20deg);
+  opacity: 50%;
+}
+
+.GoButton {
+  position: absolute;
+  bottom: 2em;
+  left: 10vw;
+  align-self: center;
+  width: 8em;
+  font-size: 2em;
+  text-align: center;
+  border-radius: 50px;
+  color: var(--clr-text-light);
+  background: var(--clr-accent-500);
+  cursor: pointer;
+}
+
+
+@media (max-width: 50rem) {
+  .logo {
+    font-size: 2.5em; 
+    top: 25rem;
+  }
+
+  .textBox {
+    top: 20rem;
+    left: 2rem;
+  }
+  .logoImg {
+    width: min(15rem, 50vw);
+    top: 5rem;
+    right: 0rem;
+  }
+
+.logo{
+  left: 5rem;
+}
+
+  /* .topBox {
+    font-size: 1.5rem;
+  } */
+}

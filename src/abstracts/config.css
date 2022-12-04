@@ -1,0 +1,92 @@
+*,
+*::before,
+*::after {
+  --min-font-size : 8px;
+  --min-screen-width: 20rem;
+  --max-font-size: 24px;
+  box-sizing: border-box;
+  font-family: Roboto;
+  /* font-size: calc(var(--min-font-size) + 
+    (((100vw - 24px / (90 - 20))) * (var(--max-font-size) - var(--min-font-size)))); */
+  /* font-size: clamp(.8rem, 2vw, 2rem); */
+}
+
+* {
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+@mixin media-ml {
+
+  @media screen and (min-width: 6400px) {
+    @content;
+  }
+}
+
+@mixin media-md {
+
+  @media screen and (min-width: 7680px) {
+    @content;
+  }
+}
+
+@mixin media-lg {
+
+  @media screen and (min-width: 10240px) {
+    @content;
+  }
+}
+
+@mixin media-xl {
+
+  @media screen and (min-width: 12800px) {
+    @content;
+  }
+}
+
+@mixin media-2xl {
+
+  @media screen and (min-width: 15360px) {
+    @content;
+  }
+}

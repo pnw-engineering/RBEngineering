@@ -1,0 +1,146 @@
+.newspaper {
+  max-width: 90%;
+  margin-bottom: 2em;
+  columns: auto 45ch;
+  margin: 1em auto;
+  column-gap: 5em;
+}
+
+.newspaper a {
+  color: var(--clr-accent-400);
+}
+
+.headline {
+  font-size: 1.5rem;
+  font-weight: 900;
+  font-variant: small-caps;
+  line-height: 1;
+  text-align: center;
+  color: var(--clr-highlight-400);
+  margin-bottom:1em;
+  /* padding-top: .5em; */
+}
+
+.news-card {
+  display: flex;
+  flex-direction: column;
+  break-inside: avoid;
+  page-break-inside: avoid;
+  margin-bottom: 2em;
+  /* color: var(--clr-highlight-200); */
+}
+
+.news-card .heading {
+  color: var(--clr-accent-400);
+  font-size: 1.5rem;
+  font-weight: 900;
+  font-variant: small-caps;
+  line-height: 1;
+  margin: 0 auto .25em;
+  padding-top: .5em;
+}
+.news-card .text {
+  font-size: .9rem;
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-bottom: 0.5em;
+  color: var(--clr-text-light);
+}
+.glow-box {
+  box-shadow: 0px 0px 1rem .5rem var(--clr-highlight-600);
+}
+
+.plain {
+  box-shadow: none;
+}
+
+.card {
+  display: grid;
+  grid-template:
+    "title  image"
+    "text   image"
+    /1fr 100px;
+  padding-left: .5rem;
+  padding-right: .5rem;
+  margin-bottom: 2em;
+  /* background-color: white; */
+}
+
+.card .title {
+  grid-area: title;
+  /* height: 60px; */
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  font-weight: 700;
+  /* line-height: 1; */
+  font-variant: small-caps;
+  padding-block: .25em;
+  margin: 0 auto;
+  color: var(--clr-accent-400);
+  /* background-color: white; */
+}
+
+.card .text {
+  grid-area: text;
+  /* height: 40px; */
+  line-height: 1;
+  font-size: 0.9em;
+  letter-spacing: 1px;
+  padding-bottom: .25em;
+  color: var(--clr-text-light);
+  margin: 0 auto;
+  text-align: center;
+}
+
+.card img {
+  grid-area: image;
+  aspect-ratio: 1/1;
+  max-height: 100%;
+  background-color: var(--clr-primary-400);
+}
+
+.newspaper .nobreak {
+  break-inside: avoid;
+  page-break-inside: avoid;
+  margin-bottom: 2em;
+}
+
+.newspaper .nobreak h1 {
+  width: 30rem;
+  text-align: center;
+  color: var(--clr-text-light);
+}
+article {
+  font-size: 1rem;
+  line-height: 1.6;
+  border: 1px solid black;
+  margin-bottom: 15px;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.904);
+}
+
+article h3 {
+  font-size: 1.5rem;
+  letter-spacing: 3px;
+  padding: 5px;
+  color: var(--clr-accent);
+}
+article p {
+  width: 100%;
+  font-size: 1rem;
+  padding: 5px;
+}
+article:hover {
+  background-image: var(--gradientv);
+}
+article.card {
+  font-size: 1rem;
+  border: 1px solid black;
+  margin-bottom: 15px;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.904);
+}
+
+.WideContainer {
+  width: 90%;
+  height: auto;
+  margin: 0 auto;
+}
