@@ -17,7 +17,7 @@
   line-height: 1;
   text-align: center;
   color: var(--clr-highlight-400);
-  margin-bottom:1em;
+  margin-bottom: 1em;
   /* padding-top: .5em; */
 }
 
@@ -36,18 +36,20 @@
   font-weight: 900;
   font-variant: small-caps;
   line-height: 1;
-  margin: 0 auto .25em;
-  padding-top: .5em;
+  margin: 0 auto 0.25em;
+  padding-top: 0.5em;
 }
+
 .news-card .text {
-  font-size: .9rem;
+  font-size: 0.9rem;
   padding-left: 1em;
   padding-right: 1em;
   padding-bottom: 0.5em;
   color: var(--clr-text-light);
 }
+
 .glow-box {
-  box-shadow: 0px 0px 1rem .5rem var(--clr-highlight-600);
+  box-shadow: 0px 0px 1rem 0.5rem var(--clr-highlight-600);
 }
 
 .plain {
@@ -60,8 +62,8 @@
     "title  image"
     "text   image"
     /1fr 100px;
-  padding-left: .5rem;
-  padding-right: .5rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
   margin-bottom: 2em;
   /* background-color: white; */
 }
@@ -74,7 +76,7 @@
   font-weight: 700;
   /* line-height: 1; */
   font-variant: small-caps;
-  padding-block: .25em;
+  padding-block: 0.25em;
   margin: 0 auto;
   color: var(--clr-accent-400);
   /* background-color: white; */
@@ -86,7 +88,7 @@
   line-height: 1;
   font-size: 0.9em;
   letter-spacing: 1px;
-  padding-bottom: .25em;
+  padding-bottom: 0.25em;
   color: var(--clr-text-light);
   margin: 0 auto;
   text-align: center;

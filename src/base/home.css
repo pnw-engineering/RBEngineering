@@ -197,7 +197,7 @@
   transition: 0.15s;
 }
 .sidenav a:hover {
-  color: $highlight-color;
+  color: var(--clr-accent);
 }
 .sidenav .closebtn {
   position: relative;
