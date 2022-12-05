@@ -79,9 +79,7 @@
   display: grid;
   grid-template:
     "button  copyr"
-    / 1fr 
-    
-    rem;
+    / 1fr 9rem;
   height: 100%;
   bottom: 0;
   text-align: center;
