@@ -14,10 +14,11 @@ button,
 select {
   cursor: pointer;
   transition: 0.2s ease;
-
-  &:focus {
-    outline: 0;
-  }
+}
+a,
+button,
+select:focus {
+  outline: 0;
 }
 
 a:hover {
@@ -55,7 +56,7 @@ details dl dt::before {
   content: "---";
 }
 
-> dd {
+details > dd {
   width: 90%;
   padding-left: 5px;
   width: min(80ch, 90%);
@@ -66,10 +67,10 @@ details dl dt::before {
   line-height: 1.6;
   text-align: justify;
   padding-bottom: 1em;
+}
 
-  a {
-    color: var(--clr-accent-400);
-  }
+.intro a {
+  color: var(--clr-accent-400);
 }
 
 .disclaimer {

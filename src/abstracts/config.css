@@ -1,14 +1,15 @@
 *,
 *::before,
 *::after {
-  --min-font-size : 8px;
-  --min-screen-width: 20rem;
+  --min-font-size : 10px;
+  --min-screen-width: 26rem;
   --max-font-size: 24px;
   box-sizing: border-box;
   font-family: Roboto;
-  /* font-size: calc(var(--min-font-size) + 
-    (((100vw - 24px / (90 - 20))) * (var(--max-font-size) - var(--min-font-size)))); */
+  font-size: calc(var(--min-font-size) + 
+    (((100vw - 24px / (90 - 20))) * (var(--max-font-size) - var(--min-font-size))));
   /* font-size: clamp(.8rem, 2vw, 2rem); */
+  font-size: clamp(0.9rem, 2vw - 5rem, 2rem);
 }
 
 * {
@@ -56,7 +57,7 @@ h6 {
   isolation: isolate;
 }
 
-@mixin media-ml {
+/* @mixin media-ml {
 
   @media screen and (min-width: 6400px) {
     @content;
@@ -89,4 +90,4 @@ h6 {
   @media screen and (min-width: 15360px) {
     @content;
   }
-}
+} */

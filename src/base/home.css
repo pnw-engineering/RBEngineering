@@ -19,22 +19,15 @@
   grid-template:
     "bgr title"
     "bgr subtitle"
-    /3rem 1fr;
+    /4em 1fr;
   width: 100%;
   line-height: 1;
   border-bottom: 3px solid var(--clr-accent);
   overflow-y: hidden;
 }
 
-.header__bgr {
-  grid-area: bgr;
-  width: 1rem;
-  font-size: 30px;
-  margin: auto;
-  cursor: pointer;
-}
 .header__title {
-  font-size: 1.5rem;
+  font-size: 1.5em;
   grid-area: title;
   font-weight: bold;
   font-variant: small-caps;
@@ -43,11 +36,11 @@
 }
 .header__subtitle {
   grid-area: subtitle;
-  padding-left: 10px;
+  padding-left: 1em;
   padding-bottom: .5em;
   margin: 0 auto;
   text-align: center;
-  font-size: .7rem;
+  font-size: .7em;
   border-bottom: 3px var(--clr-accent);
 }
 .content {
@@ -64,7 +57,7 @@
   margin: 0 auto;
   text-align: center;
   letter-spacing: 5px;
-  font-size: 2rem;
+  font-size: 2em;
   font-variant: small-caps;
   font-weight: 700;
   color: var(--clr-accent-400);
@@ -79,7 +72,7 @@
   display: grid;
   grid-template:
     "button  copyr"
-    / 1fr 9rem;
+    / 1fr 9em;
   height: 100%;
   bottom: 0;
   text-align: center;
@@ -104,14 +97,14 @@
   grid-area: content;
   z-index: 9999;
   height: 100%;
-  padding: 0 10px 0 10px;
+  padding: 0 1em 0 1em;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   text-align: center;
   position: absolute;
   width: 8em;
-  left: 0px;
+  /* left: 0px; */
   top: 0;
   background-color: var(--clr-primary-600);
   cursor: pointer;
@@ -125,7 +118,7 @@
 
 .nav-links a {
   color: var(--clr-text-light);
-  font-size: 1em;
+  /* font-size: 1em; */
   transition: color 0.15s ease-in;
 }
 
@@ -134,20 +127,23 @@
 }
 
 .burger {
+  grid-area: bgr;
   cursor: pointer;
-  padding-right: 10px;
+  padding-top: .5em;
+  padding-right: .625rem;
   color: rbg(256, 256, 256);
 }
 
 .burger > div {
-  width: 25px;
-  height: 3px;
+  width: 2em;
+  height: .1em;
   background-color: white;
-  margin: 5px;
+  margin: .2rem;
 }
 
 .toggle .line1 {
-  transform: rotate(-45deg) translate(-5px, 6px);
+  /* transform: rotate(-45deg) translate(-.5em, .5em); */
+  transform: rotate(-45deg) translate(-.2em, .2em);
   background-color: var(--clr-accent);
 }
 
@@ -156,7 +152,8 @@
 }
 
 .toggle .line3 {
-  transform: rotate(45deg) translate(-5px, -6px);
+  /* transform: rotate(45deg) translate(-.5em, -1em); */
+  transform: rotate(45deg) translate(-.2em, -.2em);
   background-color: var(--clr-accent);
 }
 
