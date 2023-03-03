@@ -1,9 +1,9 @@
 /* Button style */
 .btn {
-  font-size: 16px;
-  font-family: $primary-font;
+  /* font-size: 16px; */
+  font-family: var(--primary-font);
   text-transform: capitalize;
-  padding: 15px 40px;
+  padding: 15px 4em;
   border-radius: 0;
   font-weight: 500;
   border: 0;
@@ -48,7 +48,7 @@
 }
 
 .btn-primary {
-  background: $primary-color;
+  background: var(--clr-primary-400);
   color: white;
 }
 
@@ -56,35 +56,36 @@
   background: white;
 }
 .btn-primary :active {
-  background: $primary-color !important;
-  color: $primary-color;
+  background: var(--clr-primary-400) !important;
+  color:var(--clr-text-normal);
 }
 .btn-primary :active ::before {
   height: 80%;
 }
 .btn-primary :hover {
-  background: darken($color: $primary-color, $amount: 10);
-  color: $primary-color;
+  background: var(--clr-primary-600);
+  color:var(--clr-primary-400);
 }
-.btn-primary:not(:disabled):not(.disabled).active,
+
+.btn-primary:not(:disabled):not(.disabled).active,lr
 .btn-primary:not(:disabled):not(.disabled):active,
 .show > .btn-primary.dropdown-toggle {
   color: white;
-  background-color: darken($color: $primary-color, $amount: 10);
-  border-color: darken($color: $primary-color, $amount: 10);
+  background-color: var(--clr-primary-600);
+  border-color: var(--clr-primary-600);
 }
 
 .btn-secondary {
   background: white;
-  color: $primary-color;
+  color:var(--clr-primary-400);
   border: 1px solid white;
 }
 
 .btn-secondary ::before {
-  background: $primary-color;
+  background: var(--clr-primary-400);
 }
 .btn-secondary :active {
-  background: $primary-color;
+  background: var(--clr-primary-400);
   color: white;
   border: 1px solid white;
 }
@@ -94,8 +95,8 @@
   border: 1px solid white;
 }
 .btn-primary-outline {
-  border: 1px solid $primary-color;
-  color: $primary-color;
+  border: 1px solid var(--clr-primary-400);
+  color: var(--clr-primary-400);
   background: transparent;
 }
 
@@ -103,11 +104,11 @@
   background: white;
 }
 .btn-primary-outline :hover {
-  background: $primary-color;
-  color: $primary-color;
+  background:var(--clr-primary-400);
+  color:var(--clr-primary-400);
 }
 .btn-primary-outline :active {
-  background: $primary-color;
+  background:var(--clr-primary-400);
   color: white;
 }
 /* 3D button ------------------------ */

@@ -1,4 +1,3 @@
-
 .roadmap {
   width: 90%;
   padding-top: 2em;
@@ -10,19 +9,19 @@
 }
 
 .MapButton {
-  color: $text-color;
-  margin: .5rem;
+  color: var(--clr-text-normal);
+  margin: 0.5rem;
   padding-left: 5px;
   min-width: 6ch;
   height: auto;
-  border: 1px solid $text-color;
+  border: 1px solid var(--clr-text-normal);
   border-radius: 1ch;
   cursor: pointer;
-  background-color: darken($secondary-color, 20%);
+  background-color: var(--clr-primary-900);
 }
 
 .MapButton:hover {
-  background-image: $gradient1;
+  background-image: var(--gradient1);
 }
 
 .tooltip {
@@ -74,7 +73,7 @@
 
 .mapQuestion {
   font-size: 1.5rem;
-  background-color: lighten($primary-color, 2.5%);
+  background-color: var(--clr-primary-600);
 }
 
 .HypoTable {
@@ -83,7 +82,6 @@
     "Name H0   HA   Link"
     "Case Case Case Case"
     /1fr 1fr 1fr 3em;
-
 }
 
 .HTableName {
@@ -101,7 +99,6 @@
   text-align: center;
   display: block;
   border: 1px solid white;
-
 }
 
 .HTableHA {
@@ -118,12 +115,11 @@
   justify-content: center;
   cursor: pointer;
   border: 1px solid white;
+}
 
-  img {
-    padding: 3px;
-    max-width: 90%;
-  }
-
+img {
+  padding: 3px;
+  max-width: 90%;
 }
 
 .HTabUseCase {
@@ -132,12 +128,11 @@
   border: 1px solid white;
   padding-left: 5px;
   padding-right: 5px;
-
 }
 
 .HTabUseCase::before {
   text-transform: small-caps;
-  color: $highlight-color;
+  color: var(--clr-accent-300);
   content: "Typical use case: ";
 }
 
@@ -150,7 +145,7 @@
 
 .hToolHead {
   grid-area: n;
-  content: "Tool Name"
+  content: "Tool Name";
 }
 
 .hToolName {
@@ -169,12 +164,10 @@
   grid-area: H0;
   font-size: 1.5em;
   border: 1px solid white;
-
 }
 
 .hToolHA {
   grid-area: HA;
   font-size: 1.5em;
   border: 1px solid white;
-
 }

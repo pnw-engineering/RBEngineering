@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta Content-Type="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="preconnect" href="https://fonts.googleapis.com/css">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300" rel="stylesheet">
+  <!-- <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> -->
+  <link rel="stylesheet" href="style.css">
+  <title>Home</title>
+</head>
+<form class="color-picker" action="">
+  <fieldset>
+    <legend class="visually-hidden">Pick a color scheme</legend>
+    <label for="light" class="visually-hidden">Light</label>
+    <input type="radio" name="theme" id="light" checked>
+
+    <label for="pink" class="visually-hidden">Pink theme</label>
+    <input type="radio" id="pink" name="theme">
+
+    <label for="blue" class="visually-hidden">Blue theme</label>
+    <input type="radio" id="blue" name="theme">
+
+    <label for="green" class="visually-hidden">Green theme</label>
+    <input type="radio" id="green" name="theme">
+
+    <label for="dark" class="visually-hidden">Dark theme</label>
+    <input type="radio" id="dark" name="theme">
+  </fieldset>
+</form>
+
+<body>
+  <header class="header">
+    <div class="burger">
+      <div class="line1"></div>
+      <div class="line2"></div>
+      <div class="line3"></div>
+    </div>
+  </header>
+  <main>
+    <div class="wrapper">
+      <h1>Change theme colors</h1>
+      <div class="auto-grid">
+        <div class="crd">
+          <h3 class="crd__title">Example title</h3>
+          <p>Example card content</p>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="foot">
+    <!-- <button class="footButton pushable" onclick="window.location.href='start.html'"> -->
+    <button class="footButton pushable" onclick="history.back(-1)">
+      <span class="shadow"></span>
+      <span class="edge"></span>
+      <span class="front">Back</span>
+    </button>
+    <div class="footCR">&copy; Copyright 2022</div>
+    <script src="js/user.js"></script>
+  </footer>
+
+</body>
+<script src="https://kit.fontawesome.com/6d2ea823d0.js"></script>
+
+</html>

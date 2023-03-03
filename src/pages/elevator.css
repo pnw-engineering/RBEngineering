@@ -15,7 +15,7 @@
 }
 
 .card-simple.title {
-  font-size: 1.5rem;
+  font-size: 1.5em;
   letter-spacing: 2px;
   font-weight: 700;
   font-variant: small-caps;
@@ -24,24 +24,13 @@
 }
 .card-simple.text {
   width: 100%;
-  font-size: 1rem;
+  /* font-size: 1rem; */
   line-height: 1.8;
   letter-spacing: 1px;
   text-align: justify;
   padding-left: 15px;
   padding-right: 15px;
   color: var(--clr-text-normal);
-}
-.return {
-  display: block;
-  margin-left: 5px;
-  width: 100px;
-  color: white;
-  font-size: 1.1em;
-}
-
-.return:hover {
-  @include transition-ease;
 }
 
 @keyframes speecht {

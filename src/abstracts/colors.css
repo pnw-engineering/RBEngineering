@@ -1,5 +1,5 @@
 :root {
-  --clr-primary-100: hsla(212, 50%, 90%);
+  /* --clr-primary-100: hsla(212, 50%, 90%);
   --clr-primary-200: hsl(212, 50%, 70%);
   --clr-primary-400: hsla(212, 50%, 50%);
   --clr-primary-600: hsl(212, 50%, 25%);
@@ -18,11 +18,11 @@
   --clr-highlight-400: hsl(202deg 43% 50%);
   --clr-highlight-600: hsl(202deg 43% 25%);
   --clr-highlight-800: hsl(202deg 43% 10%);
-  --clr-accent: #b63f0c;
+  --clr-accent: hsl(18, 88%, 38%);
   --clr-accent-100: hsl(18, 100%, 96%);
   --clr-accent-300: hsl(18, 88%, 75%);
   --clr-accent-400: hsl(18, 88%, 40%);
-  --clr-accent-500: hsl(18, 88%, 30%);
+  --clr-accent-500: hsl(18, 88%, 30%); */
 
   --gradient1: linear-gradient(
     90deg,
@@ -37,9 +37,22 @@
     hsl(207, 44%, 29%) 50%,
     hsl(202deg 43% 46%) 100%
   );
+/* standard colors for dark theme */
+  /* --background: var(--clr-primary-700); */
+  --background: var(--clr-body-bg);
+  /* --foreground: var(--clr-text-normal); */
+  --foreground: var(--clr-text);
+  --accent: var(--clr-accent);
+
+  /* --clr-body-bg: hsl(212 50% 15%); */
+  /* --clr-card-bg: hsl(0 0% 100%); */
+  /* --clr-text: hsl(60 30% 90%); */
+  /* --clr-text: hsl(0, 95%, 23%); */
+  /* --clr-heading: hsl(0 0% 25%); */
+  /* --clr-accent: hsl(18, 88%, 38%) */
 }
 
-.bg-primary-100 {
+/* .bg-primary-100 {
   background-color: var(--clr-primary-100);
 }
 
@@ -81,4 +94,4 @@
 
 .txt-accent {
   color: var(--clr-accent);
-}
+} */

@@ -14,15 +14,15 @@
   <title>Home</title>
 </head>
 
-<body class="site bg-primary-700" id="mysite">
-  <header class="header bg-primary-700 txt-normal">
+<body class="site" id="mysite">
+  <header class="header">
     <div class="burger">
       <div class="line1"></div>
       <div class="line2"></div>
       <div class="line3"></div>
     </div>
     <div class="header__title">Robust Engineering</div>
-    <div class="header__subtitle txt-light">Science, Statistics, and Critical Thinking to improve product robustness</div>
+    <div class="header__subtitle">Science, Statistics, and Critical Thinking to improve product robustness</div>
   </header>
 
   <nav>
@@ -51,12 +51,15 @@
       <li>
         <a href="NewStart.html">NewStart</a>
       </li>
+      <li>
+        <a href="theme.html">Change Theme</a>
+      </li>
     </ul>
   </nav>
 
-  <main class="content bg-primary-700 txt-dark">
-    <div class="newspaper txt-normal">
-      <div class="DropCap disclaimer nobreak txt-accent">Note: This site is a work in process and incomplete. If you are interested and would like to know more about it, please contact me at <a
+  <main class="content">
+    <div class="newspaper">
+      <div class="DropCap disclaimer nobreak">Note: This site is a work in process and incomplete. If you are interested and would like to know more about it, please contact me at <a
           href="mailto:rbishop4561@outlook.com">rbishop4561@outlook.com</a>.</div>
       <div class="intro DropCap nobreak">Welcome to <span class="highlight">Robust Engineering</span> an online learning site intending to provide training for those working in product development and would like to improve product and/or process robustness. Product robustness here means the product will provide <span class="highlight">the intended functions, in stated conditions, for the specified time, in the presence of noise</span>.</div>
       <div class="intro nobreak">Some assumptions are made about the experience level of the organization and individuals doing the various engineering activities. Links to background information to help close gaps are provided below.</div>
@@ -81,6 +84,26 @@
   </main>
 
   <footer class="foot">
+    <form class="color-picker" action="">
+  <fieldset>
+    <legend class="visually-hidden">Pick a color scheme</legend>
+    <label for="light" class="visually-hidden">Light</label>
+    <input type="radio" name="theme" id="light" checked>
+
+    <label for="pink" class="visually-hidden">Pink theme</label>
+    <input type="radio" id="pink" name="theme">
+
+    <label for="blue" class="visually-hidden">Blue theme</label>
+    <input type="radio" id="blue" name="theme">
+
+    <label for="green" class="visually-hidden">Green theme</label>
+    <input type="radio" id="green" name="theme">
+
+    <label for="dark" class="visually-hidden">Dark theme</label>
+    <input type="radio" id="dark" name="theme">
+  </fieldset>
+</form>
+
     <!-- <button class="footButton pushable" onclick="window.location.href='start.html'"> -->
     <button class="footButton pushable" onclick="history.back(-1)">
       <span class="shadow"></span>
